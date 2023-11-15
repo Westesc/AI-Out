@@ -60,11 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LaserBeam.cs" />
-    <Compile Include="Assets\Scripts\TurretRotation.cs" />
-    <Compile Include="Assets\Scripts\CameraRaycast.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
-    <Compile Include="Assets\Scripts\Laser.cs" />
-    <Compile Include="Assets\Scripts\RotateObject.cs" />
+    <Compile Include="Assets\Scripts\SkryptyMenu.cs" />
+    <Compile Include="Assets\Scripts\GunRotate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

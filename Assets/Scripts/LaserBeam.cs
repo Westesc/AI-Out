@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LaserBeam
 {
-    Vector2 positon, direction;
+    Vector3 positon, direction;
     GameObject laserObject;
     LineRenderer laser;
-    List<Vector2> laserPoints = new List<Vector2>();
-    public LaserBeam(Vector2 position,Vector2 direction, Material material)
+    List<Vector3> laserPoints = new List<Vector3>();
+    public LaserBeam(Vector3 position,Vector3 direction, Material material)
     {
         this.laser = new LineRenderer();
         this.laserObject = new GameObject();
@@ -21,17 +21,38 @@ public class LaserBeam
         this.laser.endWidth = 0.1f;
         this.laser.material = material;
         this.laser.startColor = Color.green;
-        this.laser.endColor = Color.green;
+        this.laser.endColor = Color.red;
 
         CastRay(position,direction,laser);
     }
+
+    public void DestroyLaser()
+    {
+        laserPoints.Clear();
+    }
+
+    public void CreateLaser(Vector3 position, Vector3 direction, Material material)
+    {
+        
+        this.positon = position;
+        this.direction = direction;
+
+        this.laser.startWidth = 0.1f;
+        this.laser.endWidth = 0.1f;
+        this.laser.material = material;
+        this.laser.startColor = Color.green;
+        this.laser.endColor = Color.red;
+
+        CastRay(position, direction, laser);
+    }
+
     
-    void CastRay(Vector2 position,Vector2 direction, LineRenderer laser)
+    void CastRay(Vector3 position,Vector3 direction, LineRenderer laser)
     {
         laserPoints.Add(position);
         Ray ray = new Ray(position,direction);
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit, 30,5)) 
+        if(Physics.Raycast(ray, out hit, 30,1)) 
         {
             CheckHit(hit,direction,laser);
         }
@@ -47,7 +68,7 @@ public class LaserBeam
         int i = 0;
         laser.positionCount = laserPoints.Count;
 
-        foreach (Vector2 point in laserPoints)
+        foreach (Vector3 point in laserPoints)
         {
             laser.SetPosition(i, point);
             i++;
@@ -55,12 +76,12 @@ public class LaserBeam
            
     }
 
-    void CheckHit(RaycastHit hitInfo, Vector2 direction, LineRenderer laser)
+    void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
     {
         if(hitInfo.collider.gameObject.tag == "Mirror") 
         {
-            Vector2 pos = hitInfo.point;
-            Vector2 dir = Vector2.Reflect(direction, hitInfo.normal);
+            Vector3 pos = hitInfo.point;
+            Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
             CastRay(pos, dir, laser);
 
