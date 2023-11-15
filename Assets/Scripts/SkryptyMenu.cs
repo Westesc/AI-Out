@@ -13,6 +13,6 @@ public class SkryptyMenu : MonoBehaviour
     }
     public void Zaczynamy()
     {
-        SceneManager.LoadScene("SampleScene"); 
+        SceneManager.LoadScene("Level1"); 
     }
 }

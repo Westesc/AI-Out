@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\LaserBeam.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
     <Compile Include="Assets\Scripts\SkryptyMenu.cs" />
+    <Compile Include="Assets\Scripts\NextLevelSkrypt.cs" />
     <Compile Include="Assets\Scripts\GunRotate.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LaserBeam
 {
@@ -26,6 +27,7 @@ public class LaserBeam
         CastRay(position,direction,laser);
     }
 
+    //We clear all point where lasser was created
     public void DestroyLaser()
     {
         laserPoints.Clear();
@@ -76,6 +78,7 @@ public class LaserBeam
            
     }
 
+    //Operation to check what laser hit
     void CheckHit(RaycastHit hitInfo, Vector3 direction, LineRenderer laser)
     {
         if(hitInfo.collider.gameObject.tag == "Mirror") 
@@ -85,6 +88,12 @@ public class LaserBeam
 
             CastRay(pos, dir, laser);
 
+        }else if(hitInfo.collider.gameObject.tag =="Finish"){
+            if (Input.GetKey(KeyCode.F))
+                SceneManager.LoadScene("NextLevel");
+            laserPoints.Add(hitInfo.point);
+            UpdateLaser();
+            
         }
         else
         {
