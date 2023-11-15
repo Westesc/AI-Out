@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevelSkrypt : MonoBehaviour
+public class CoiceWindow : MonoBehaviour
 {
-
+    // Start is called before the first frame update
     public void Zamykanie()
     {
         Application.Quit();
         Debug.Log("Zamykanie...");
         GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
     }
-    public void Next()
+    public void ChoisedLevel(int level)
     {
-        
-        SceneManager.LoadScene(PlayerPrefs.GetInt("lastLevel")+1);
+        string levelName = "Level" + level;
+        SceneManager.LoadScene(levelName);
     }
-    public void Repeate()
-    {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("lastLevel"));
-    }
+   
 }

@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 493294520}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SkryptyMenu, Assembly-CSharp
         m_MethodName: Zamykanie
         m_Mode: 1
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 354099038}
   - component: {fileID: 354099037}
   m_Layer: 5
-  m_Name: PrzyciskWybierz
+  m_Name: Poziom2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,26 +339,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 4b13f946e243a4c4e8d3cdca1a4e36fd, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 493294520}
-        m_TargetAssemblyTypeName: SkryptyMenu, Assembly-CSharp
-        m_MethodName: Wybierz
-        m_Mode: 1
+      - m_Target: {fileID: 493294522}
+        m_TargetAssemblyTypeName: CoiceWindow, Assembly-CSharp
+        m_MethodName: ChoisedLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -541,8 +529,8 @@ GameObject:
   - component: {fileID: 493294518}
   - component: {fileID: 493294517}
   - component: {fileID: 493294516}
-  - component: {fileID: 493294520}
   - component: {fileID: 493294521}
+  - component: {fileID: 493294522}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -636,18 +624,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &493294520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493294515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bff27f9097a26a34bbf39cbed1787882, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &493294521
 AudioSource:
   m_ObjectHideFlags: 0
@@ -744,6 +720,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &493294522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493294515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895e0d6d5300e7845a1737b5400732a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &693966326
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +971,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WYBIERZ
+  m_Text: POZIOM 2
 --- !u!222 &808064739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1154,7 +1142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: POZIOM 1
 --- !u!222 &1042843599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1244,7 +1232,7 @@ GameObject:
   - component: {fileID: 1550894450}
   - component: {fileID: 1550894449}
   m_Layer: 5
-  m_Name: PrzyciskStart
+  m_Name: Poziom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,26 +1302,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 4b13f946e243a4c4e8d3cdca1a4e36fd, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 493294520}
-        m_TargetAssemblyTypeName: SkryptyMenu, Assembly-CSharp
-        m_MethodName: Zaczynamy
-        m_Mode: 1
+      - m_Target: {fileID: 493294522}
+        m_TargetAssemblyTypeName: CoiceWindow, Assembly-CSharp
+        m_MethodName: ChoisedLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

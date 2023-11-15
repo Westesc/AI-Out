@@ -90,7 +90,10 @@ public class LaserBeam
 
         }else if(hitInfo.collider.gameObject.tag =="Finish"){
             if (Input.GetKey(KeyCode.F))
+            {
+                PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);
                 SceneManager.LoadScene("NextLevel");
+            }
             laserPoints.Add(hitInfo.point);
             UpdateLaser();
             

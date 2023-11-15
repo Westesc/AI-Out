@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LaserBeam.cs" />
+    <Compile Include="Assets\Scripts\ChoiceWindow.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
     <Compile Include="Assets\Scripts\SkryptyMenu.cs" />
     <Compile Include="Assets\Scripts\NextLevelSkrypt.cs" />

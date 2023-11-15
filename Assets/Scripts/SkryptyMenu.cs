@@ -15,4 +15,8 @@ public class SkryptyMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level1"); 
     }
+    public void Wybierz()
+    {
+        SceneManager.LoadScene("ChoiceLevel");
+    }
 }
