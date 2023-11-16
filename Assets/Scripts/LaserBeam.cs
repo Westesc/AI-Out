@@ -98,6 +98,12 @@ public class LaserBeam
             UpdateLaser();
             
         }
+        else if (hitInfo.collider.gameObject.tag == "Button")
+        {
+            hitInfo.collider.gameObject.GetComponent<ButtonScpript>().isCollider = true;
+            laserPoints.Add(hitInfo.point);
+            UpdateLaser();
+        }
         else
         {
             laserPoints.Add(hitInfo.point);
