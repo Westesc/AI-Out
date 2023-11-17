@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\SkryptyMenu.cs" />
     <Compile Include="Assets\Scripts\SwitchCamera.cs" />
     <Compile Include="Assets\Scripts\NextLevelSkrypt.cs" />
+    <Compile Include="Assets\Scripts\ButtonScipt.cs" />
     <Compile Include="Assets\Scripts\GunRotate.cs" />
   </ItemGroup>
   <ItemGroup>

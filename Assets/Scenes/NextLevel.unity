@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 223422582}
   - component: {fileID: 223422581}
   m_Layer: 5
-  m_Name: "PrzyciskWyjd\u017A"
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 493294522}
         m_TargetAssemblyTypeName: NextLevelSkrypt, Assembly-CSharp
-        m_MethodName: Zamykanie
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1422,7 +1422,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "WYJD\u0179 Z GRY"
+  m_Text: MENU
 --- !u!222 &2082621625
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 public class NextLevelSkrypt : MonoBehaviour
 {
 
-    public void Zamykanie()
+    public void MainMenu()
     {
-        Application.Quit();
-        Debug.Log("Zamykanie...");
-        GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
+        SceneManager.LoadScene("StartScene");
     }
     public void Next()
     {
