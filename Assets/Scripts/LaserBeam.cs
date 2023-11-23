@@ -9,6 +9,9 @@ public class LaserBeam
     GameObject laserObject;
     LineRenderer laser;
     List<Vector3> laserPoints = new List<Vector3>();
+    public static GameObject [] ctrl = new GameObject[5];
+    public static int ctrlN = 1;
+    bool tmp = true;
     public LaserBeam(Vector3 position,Vector3 direction, Material material)
     {
         this.laser = new LineRenderer();
@@ -88,7 +91,29 @@ public class LaserBeam
 
             CastRay(pos, dir, laser);
 
-        }else if(hitInfo.collider.gameObject.tag =="Finish"){
+        }
+        else if(hitInfo.collider.gameObject.tag == "RotMirror")
+        {
+            Vector3 pos = hitInfo.point;
+            Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
+
+            CastRay(pos, dir, laser);
+            for(int i=0; i<ctrlN; i++)
+            {
+                if (hitInfo.collider.gameObject == ctrl[i])
+                {
+                    tmp = false;
+                }
+            }
+            if (tmp && ctrlN < 4)
+            {
+                ctrl[ctrlN] = hitInfo.collider.gameObject;
+                ctrlN++;
+            }
+
+
+        }
+        if (hitInfo.collider.gameObject.tag =="Finish"){
             if (Input.GetKey(KeyCode.F))
             {
                 PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);

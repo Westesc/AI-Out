@@ -24,9 +24,9 @@ public class ButtonScpript : MonoBehaviour
         if (isCollider && oneTime)
         {
 
-            Debug.Log("Collision with Object!");
+            //Debug.Log("Collision with Object!");
             oneTime = false;
-             StartCoroutine(MoveObject(new Vector3(x, y, z), duration));
+            StartCoroutine(MoveObject(new Vector3(x, y, z), duration));
         }
     }
     IEnumerator MoveObject(Vector3 targetPosition, float duration)
