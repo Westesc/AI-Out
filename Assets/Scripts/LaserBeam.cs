@@ -25,7 +25,7 @@ public class LaserBeam
         this.laser.endWidth = 0.1f;
         this.laser.material = material;
         this.laser.startColor = Color.green;
-        this.laser.endColor = Color.red;
+        this.laser.endColor = Color.green;
 
         CastRay(position,direction,laser);
     }
@@ -46,7 +46,7 @@ public class LaserBeam
         this.laser.endWidth = 0.1f;
         this.laser.material = material;
         this.laser.startColor = Color.green;
-        this.laser.endColor = Color.red;
+        this.laser.endColor = Color.green;
 
         CastRay(position, direction, laser);
     }
@@ -114,6 +114,7 @@ public class LaserBeam
 
         }
         if (hitInfo.collider.gameObject.tag =="Finish"){
+            hitInfo.collider.gameObject.GetComponent<FinishScrpit>().isCollider = true;
             if (Input.GetKey(KeyCode.F))
             {
                 PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);
@@ -122,7 +123,7 @@ public class LaserBeam
             laserPoints.Add(hitInfo.point);
             UpdateLaser();
             
-        }
+        } 
         else if (hitInfo.collider.gameObject.tag == "Button")
         {
             hitInfo.collider.gameObject.GetComponent<ButtonScpript>().isCollider = true;

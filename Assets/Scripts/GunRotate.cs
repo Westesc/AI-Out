@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GunRotate : MonoBehaviour
 {
-    private float speed1 = 10.0f;
-    private float speed2 = 10.0f;
+    private float speed = 10.0f;
     private float horizontalInput;
     private float VerticalInput;
     private float timer1;
@@ -16,35 +15,17 @@ public class GunRotate : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         VerticalInput = Input.GetAxis("Vertical");
-        if(VerticalInput == 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            timer1 = 0;
-            speed1 = 10.0f;
+            speed = 50.0f;
         }
-        else
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            timer1 += Time.deltaTime;
-            if (timer1 > 1 && timer1 <1.9)
-            {
-                speed1 += 1.0f;
-            }
-        }
-        if (horizontalInput == 0)
-        {
-            timer2 = 0;
-            speed2 = 10.0f;
-        }
-        else
-        {
-            timer2 += Time.deltaTime;
-            if (timer2 > 1 && timer2<1.9)
-            {
-                speed2 += 1.0f;
-            }
+            speed = 10.0f;
         }
         //We rotate gun up and down
-        transform.Rotate(Vector3.forward, Time.deltaTime * speed1 * VerticalInput); 
+        transform.Rotate(Vector3.forward, Time.deltaTime * speed * VerticalInput); 
         //We move gun right and left
-        transform.Rotate(Vector3.up, Time.deltaTime * speed2 * horizontalInput);
+        transform.Rotate(Vector3.up, Time.deltaTime * speed * horizontalInput);
     }
 }

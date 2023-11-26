@@ -42,4 +42,12 @@ public class SwitchCamera : MonoBehaviour
             transform.GetChild(indexOfActiveCamera).GetComponent<AudioListener>().enabled = true;
         }
     }
+    public void ChangeCamera(int index)
+    {
+        transform.GetChild(indexOfActiveCamera).GetComponent<Camera>().enabled = false;
+        transform.GetChild(indexOfActiveCamera).GetComponent<AudioListener>().enabled = false;
+        indexOfActiveCamera = index;
+        transform.GetChild(index).GetComponent<Camera>().enabled = true;
+        transform.GetChild(index).GetComponent<AudioListener>().enabled = true;
+    }
 }

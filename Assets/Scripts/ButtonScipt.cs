@@ -13,18 +13,22 @@ public class ButtonScpript : MonoBehaviour
     [SerializeField] float y;
     [SerializeField] float z;
     float duration = 2f;
+    private SwitchCamera switchCamera;
+    int indexCamera;
     private void Start()
     {
         oneTime = true;
+        switchCamera = FindObjectOfType<SwitchCamera>(); 
     }
     void Update()
     {
-
-        // SprawdŸ, czy obiekt do przesuniêcia jest dostêpny
         if (isCollider && oneTime)
         {
-
-            //Debug.Log("Collision with Object!");
+            if (switchCamera != null)
+            {
+                switchCamera.ChangeCamera(indexCamera);
+            }
+            Debug.Log("Collision with Object!");
             oneTime = false;
             StartCoroutine(MoveObject(new Vector3(x, y, z), duration));
         }
