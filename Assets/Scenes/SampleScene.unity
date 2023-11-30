@@ -1877,6 +1877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameras: {fileID: 1312768765}
+  mainViewCamera: {fileID: 404182744}
 --- !u!1 &1312768765
 GameObject:
   m_ObjectHideFlags: 0
