@@ -38,11 +38,5 @@ public class RenderCameraTexture : MonoBehaviour
         mainViewCamera.GetComponent<RawImage>().texture = tex;
     }
 
- 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
