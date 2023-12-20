@@ -19,4 +19,12 @@ public class SkryptyMenu : MonoBehaviour
     {
         SceneManager.LoadScene("ChoiceLevel");
     }
+    public void Powrót()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+    public void Wzów()
+    {
+
+    }
 }
