@@ -9,7 +9,6 @@ public class GunRotate : MonoBehaviour
     private float VerticalInput;
     private float timer1;
     private float timer2;
-    private bool isActive;
     // Update is called once per frame
 
     void Update()
