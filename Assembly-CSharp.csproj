@@ -62,7 +62,6 @@
     <Compile Include="Assets\Scripts\LaserBeam.cs" />
     <Compile Include="Assets\Scripts\FinishScript.cs" />
     <Compile Include="Assets\Scripts\MirrorRotate.cs" />
-    <Compile Include="Assets\Scripts\ChangeLaser.cs" />
     <Compile Include="Assets\Scripts\ChoiceWindow.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
     <Compile Include="Assets\Scripts\SkryptyMenu.cs" />
@@ -70,7 +69,7 @@
     <Compile Include="Assets\Scripts\NextLevelSkrypt.cs" />
     <Compile Include="Assets\Scripts\ButtonScipt.cs" />
     <Compile Include="Assets\Scripts\RotMirror.cs" />
-    <Compile Include="Assets\Scripts\DynamicCamera.cs" />
+    <Compile Include="Assets\Scripts\RenderCameraTexture.cs" />
     <Compile Include="Assets\Scripts\GunRotate.cs" />
   </ItemGroup>
   <ItemGroup>

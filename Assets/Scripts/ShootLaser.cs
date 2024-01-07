@@ -19,5 +19,7 @@ public class ShootLaser : MonoBehaviour
     {
         beam.DestroyLaser();
         beam.CreateLaser(gameObject.transform.position, gameObject.transform.right, material);
+        
+
     }
 }
