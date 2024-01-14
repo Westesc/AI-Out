@@ -9,6 +9,7 @@ TagManager:
   - RotMirror
   - Gun
   - MainView
+  - Enemy
   layers:
   - Default
   - TransparentFX

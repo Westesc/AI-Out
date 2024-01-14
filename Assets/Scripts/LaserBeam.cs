@@ -130,6 +130,10 @@ public class LaserBeam
             laserPoints.Add(hitInfo.point);
             UpdateLaser();
         }
+        else if (hitInfo.collider.gameObject.tag == "Enemy")
+        {
+            hitInfo.collider.gameObject.GetComponent<WrongObject>().isCollider = true;
+        }
         else
         {
             laserPoints.Add(hitInfo.point);
