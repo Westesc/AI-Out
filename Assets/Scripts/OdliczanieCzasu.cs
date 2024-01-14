@@ -32,15 +32,13 @@ public class OdliczanieCzasu : MonoBehaviour
         {
             minuty = "0" + minuts.ToString();
         }
-        else if (minuts < 59)
+        else if (minuts < 60)
         {
             minuty = minuts.ToString();
         }
         else
         {
             hour += 1;
-            minuts = 0;
-            minuty = "0" + minuts.ToString();
             if (minuts < 10)
             {
                 godzina = "0" + hour.ToString();
