@@ -9,6 +9,7 @@ public class OdliczanieCzasu : MonoBehaviour
 {
     [SerializeField]
     public Text text;
+    public bool isPaused = false;
     private float sekunda = 0.0f;
     private void Awake()
     {
@@ -22,48 +23,52 @@ public class OdliczanieCzasu : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        sekunda += Time.deltaTime;
-        if(sekunda >= 1)
+        if (!isPaused)
         {
-            minuts += 1;
-            sekunda = 0;
-        }
-        if (minuts < 10)
-        {
-            minuty = "0" + minuts.ToString();
-        }
-        else if (minuts < 59)
-        {
-            minuty = minuts.ToString();
-        }
-        else
-        {
-            hour += 1;
-            minuts = 0;
-            minuty = "0" + minuts.ToString();
+            sekunda += Time.deltaTime;
+            if (sekunda >= 1)
+            {
+                minuts += 1;
+                sekunda = 0;
+            }
             if (minuts < 10)
             {
-                godzina = "0" + hour.ToString();
+                minuty = "0" + minuts.ToString();
+            }
+            else if (minuts < 59)
+            {
+                minuty = minuts.ToString();
             }
             else
             {
-                godzina = hour.ToString();
+                hour += 1;
+                minuts = 0;
+                minuty = "0" + minuts.ToString();
+                if (minuts < 10)
+                {
+                    godzina = "0" + hour.ToString();
+                }
+                else
+                {
+                    godzina = hour.ToString();
+                }
+                sekunda = 0;
             }
-            sekunda = 0;
-        }
-        if (sekunda < 0.10)
-        {
-            if (String.Format("{0:N0}", sekunda * 100) != "00" && String.Format("{0:N0}", sekunda * 100) != "10") { 
-                sekundy1 = "0" + String.Format("{0:N0}", sekunda * 100);
-             }
-        }
-        else
-        {
-            if (String.Format("{0:N0}", sekunda * 100) != "100")
+            if (sekunda < 0.10)
             {
-                sekundy1 = String.Format("{0:N0}", sekunda * 100);
+                if (String.Format("{0:N0}", sekunda * 100) != "00" && String.Format("{0:N0}", sekunda * 100) != "10")
+                {
+                    sekundy1 = "0" + String.Format("{0:N0}", sekunda * 100);
+                }
             }
+            else
+            {
+                if (String.Format("{0:N0}", sekunda * 100) != "100")
+                {
+                    sekundy1 = String.Format("{0:N0}", sekunda * 100);
+                }
+            }
+            text.text = godzina + ":" + minuty + ":" + sekundy1.ToString();
         }
-        text.text = godzina + ":"+minuty + ":" + sekundy1.ToString();
     }
 }

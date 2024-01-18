@@ -61,8 +61,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\LaserBeam.cs" />
     <Compile Include="Assets\Scripts\FinishScript.cs" />
+    <Compile Include="Assets\Scripts\WrongObject.cs" />
     <Compile Include="Assets\Scripts\MirrorRotate.cs" />
     <Compile Include="Assets\Scripts\ChoiceWindow.cs" />
+    <Compile Include="Assets\Scripts\OdliczanieCzasu.cs" />
+    <Compile Include="Assets\Scripts\sideMenu.cs" />
     <Compile Include="Assets\Scripts\ShootLaser.cs" />
     <Compile Include="Assets\Scripts\SkryptyMenu.cs" />
     <Compile Include="Assets\Scripts\SwitchCamera.cs" />
