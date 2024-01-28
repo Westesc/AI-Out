@@ -8,14 +8,22 @@ public class LaserBeam
     Vector3 positon, direction;
     GameObject laserObject;
     LineRenderer laser;
+   
     List<Vector3> laserPoints = new List<Vector3>();
     public static GameObject [] ctrl = new GameObject[5];
     public static int ctrlN = 1;
     bool tmp = true;
-    public LaserBeam(Vector3 position,Vector3 direction, Material material)
+    public LaserBeam(Vector3 position, Vector3 direction, Material material, AudioClip sound)
     {
         this.laser = new LineRenderer();
         this.laserObject = new GameObject();
+        this.laserObject.AddComponent<AudioSource>();
+        this.laserObject.GetComponent<AudioSource>().loop = true;
+        if (sound != null) { 
+            this.laserObject.GetComponent<AudioSource>().clip = sound;
+            //this.laserObject.GetComponent<AudioSource>().maxVolume = .5f;
+            this.laserObject.GetComponent<AudioSource>().Play();
+        }
         this.laserObject.name = "Laser Beam";
         this.positon = position;
         this.direction = direction;

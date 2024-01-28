@@ -5,12 +5,13 @@ using UnityEngine;
 public class ShootLaser : MonoBehaviour
 {
     public Material material;
+    public AudioClip clip;
     LaserBeam beam;
     //int tmp = 0;
 
      void Start()
     {
-        beam = new LaserBeam(gameObject.transform.position, gameObject.transform.right, material);
+        beam = new LaserBeam(gameObject.transform.position, gameObject.transform.right, material,clip);
 
     }
 
