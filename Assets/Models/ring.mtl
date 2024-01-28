@@ -1,0 +1,12 @@
+# Blender 3.6.4 MTL File: 'laser1.blend'
+# www.blender.org
+
+newmtl Material.003
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd .../textures/ball/ring/ring_Diffuse.png
+map_Ns .../textures/ball/ring/ring_Roughness.png
+map_Ke .../textures/ball/ring/ring_Emission.png

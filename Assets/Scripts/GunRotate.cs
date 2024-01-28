@@ -24,7 +24,7 @@ public class GunRotate : MonoBehaviour
             speed = 10.0f;
         }
         //We rotate gun up and down
-        transform.Rotate(Vector3.forward, Time.deltaTime * speed * VerticalInput); 
+        transform.Rotate(-Vector3.forward, Time.deltaTime * speed * VerticalInput); 
         //We move gun right and left
         transform.Rotate(Vector3.up, Time.deltaTime * speed * horizontalInput);
     }
