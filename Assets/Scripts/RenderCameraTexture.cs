@@ -26,8 +26,8 @@ public class RenderCameraTexture : MonoBehaviour
             tmp.AddComponent<RawImage>();
             tmp.GetComponent<RectTransform>().sizeDelta = new Vector2(480, 270);
             tmp.AddComponent<Button>();
-            tmp.GetComponent<Button>().onClick.AddListener(()=>SetMainTexture(ren, i));
-            Debug.Log(tmp.GetComponent<RectTransform>().rect);
+            int x = i;
+            tmp.GetComponent<Button>().onClick.AddListener(() => SetMainTexture(ren, x));
             tmp.GetComponent<RawImage>().texture = ren;  
         }
         SetMainTexture(cameras.transform.GetChild(0).GetComponent<Camera>().targetTexture,0);
@@ -40,6 +40,7 @@ public class RenderCameraTexture : MonoBehaviour
             cameras.transform.GetChild(i).GetComponent<AudioListener>().enabled = false;
         }
             mainViewCamera.GetComponent<RawImage>().texture = tex;
+        
         cameras.transform.GetChild(x).GetComponent<AudioListener>().enabled = true;
     }
 

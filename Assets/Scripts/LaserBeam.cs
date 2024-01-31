@@ -123,11 +123,13 @@ public class LaserBeam
         }
         if (hitInfo.collider.gameObject.tag =="Finish"){
             hitInfo.collider.gameObject.GetComponent<FinishScrpit>().isCollider = true;
+            hitInfo.collider.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             if (Input.GetKey(KeyCode.F))
             {
                 PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);
                 SceneManager.LoadScene("NextLevel");
             }
+            
             laserPoints.Add(hitInfo.point);
             UpdateLaser();
             
