@@ -21,7 +21,7 @@ public class LaserBeam
         this.laserObject.GetComponent<AudioSource>().loop = true;
         if (sound != null) { 
             this.laserObject.GetComponent<AudioSource>().clip = sound;
-            //this.laserObject.GetComponent<AudioSource>().maxVolume = .5f;
+            this.laserObject.GetComponent<AudioSource>().volume = .5f;
             this.laserObject.GetComponent<AudioSource>().Play();
         }
         this.laserObject.name = "Laser Beam";
