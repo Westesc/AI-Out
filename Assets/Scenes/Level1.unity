@@ -193,10 +193,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Okre\u015Bli\u0142bym siebie jako gienialnego hakera. Firma CyberFlight
-    powiedzia\u0142a, \u017Ce jej zabezpieczenia s\u0105 nie do z\u0142amania. Podj\u0105\u0142em
-    wi\u0119c wyzwanie. Przeczesuj\u0105c jej pliki znalaz\u0142em dokumentacje eksperyment\xF3w
-    na sztucznej inteligencji... potwornych eksperyment\xF3w. "
+  m_Text: "Pytania, typu jak, kto i dlaczego pozostawmy na potem. Teraz mamy wa\u017Cniejsze\r
+    rzeczy do roboty"
 --- !u!222 &25497710
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -240,7 +238,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 45.36}
+  m_SizeDelta: {x: 0, y: 105.7}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &122620227
 MonoBehaviour:
@@ -275,7 +273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &122620228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -866,7 +864,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 488.54, y: 572.4}
+  m_SizeDelta: {x: 488.54, y: 299.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251086519
 MonoBehaviour:
@@ -1347,11 +1345,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jak pewnie mo\u017Cesz si\u0119 ju\u017C domy\u015Bla\u0107 ty jeste\u015B
-    tym AI. Zrobi\u0142o mi si\u0119 ciebie szkoda, ale niestety nie mog\u0142em
-    dosi\u0119gn\u0105\u0107 twojego kodu. Niech\u0119tnie to przyznam ale zabezpieczenia
-    wok\xF3\u0142 ciebie s\u0105 za trudne dla mnie do obej\u015Bcia. Ale znalaz\u0142em
-    inny spos\xF3b by ci\u0119 wydosta\u0107..."
+  m_Text: "To co musisz wiedzie\u0107 to to \u017Ce jestem tu by ci\u0119 wydosta\u0107.\r
+    Niestety, sam nie mog\u0119 za du\u017Co zrobi\u0107, wi\u0119c wi\u0119kszo\u015B\u0107
+    sam b\u0119dziesz musia\u0142 mi troch\u0119 pom\xF3c"
 --- !u!222 &392365000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1479,8 +1475,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
-  m_SizeDelta: {x: 709.2, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1245.6, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &418882670
 MonoBehaviour:
@@ -1507,7 +1503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1707,7 +1703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &459932018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1753,7 +1749,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 488.54, y: 576}
+  m_SizeDelta: {x: 488.54, y: 392.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477711941
 MonoBehaviour:
@@ -2115,7 +2111,7 @@ RectTransform:
   m_Father: {fileID: 804490636}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2389,7 +2385,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &673452866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3357,7 +3353,7 @@ MonoBehaviour:
   m_DecelerationRate: 0.135
   m_ScrollSensitivity: 1
   m_Viewport: {fileID: 1921623785}
-  m_HorizontalScrollbar: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 1161898097}
   m_VerticalScrollbar: {fileID: 0}
   m_HorizontalScrollbarVisibility: 2
   m_VerticalScrollbarVisibility: 2
@@ -3439,7 +3435,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 45.36}
+  m_SizeDelta: {x: 0, y: 76.3}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1129672171
 MonoBehaviour:
@@ -3474,7 +3470,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &1129672172
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3501,7 +3497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1161898096
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3626,7 +3622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1191926124
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3757,7 +3753,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &1196097230
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3929,7 +3925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: f2339df3fe87848418802f4ebe3b440d, type: 2}
-  clip: {fileID: 8300000, guid: b759cf272da3ebb4e968623c5a922a1f, type: 3}
+  clip: {fileID: 8300000, guid: 461a7a3772b31f44281e64018e141cb4, type: 3}
 --- !u!114 &1313616924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4574,7 +4570,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 45.36}
+  m_SizeDelta: {x: 0, y: 75.41}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1479154304
 MonoBehaviour:
@@ -4609,7 +4605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &1479154305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5445,8 +5441,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 316261052}
   - {fileID: 231178000}
+  - {fileID: 316261052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1882885071
@@ -5501,7 +5497,7 @@ RectTransform:
   m_Father: {fileID: 1093001960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
@@ -5593,7 +5589,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 488.54, y: 198.2}
+  m_SizeDelta: {x: 488.54, y: 224.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975753839
 MonoBehaviour:
@@ -5775,7 +5771,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 488.54, y: 268.9}
+  m_SizeDelta: {x: 488.54, y: 337.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998806872
 MonoBehaviour:
@@ -5850,7 +5846,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 45.36}
+  m_SizeDelta: {x: 0, y: 88.5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2122255334
 MonoBehaviour:
@@ -5885,7 +5881,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 "
+  m_Text: "Naci\u015Bnij spacje by kontynuowa\u0107 \nNaci\u015Bnij enter by pomin\u0105\u0107 "
 --- !u!222 &2122255335
 CanvasRenderer:
   m_ObjectHideFlags: 0

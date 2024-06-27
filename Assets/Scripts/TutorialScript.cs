@@ -26,5 +26,9 @@ public class TutorialScript : MonoBehaviour
                 transform.gameObject.SetActive(false);
             }
         }
+        if (Input.GetKeyUp(KeyCode.Return))
+        {
+            transform.gameObject.SetActive(false);
+        }
     }
 }

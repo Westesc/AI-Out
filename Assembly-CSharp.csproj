@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\LaserBeam.cs" />
     <Compile Include="Assets\Scripts\TutorialScript.cs" />
+    <Compile Include="Assets\Scripts\WrongWall.cs" />
     <Compile Include="Assets\Scripts\FinishScript.cs" />
     <Compile Include="Assets\Scripts\WrongObject.cs" />
     <Compile Include="Assets\Scripts\MirrorRotate.cs" />
